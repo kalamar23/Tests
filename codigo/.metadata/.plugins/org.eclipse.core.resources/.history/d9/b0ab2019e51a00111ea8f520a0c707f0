@@ -1,0 +1,26 @@
+import java.io.*;
+public class Variables2 {
+
+	// Inicializar Array de 3 dimensiones y medir longitud
+	public void array (){
+	
+		int arreglo [][] = {{23, 34, 5, 56},
+							{5, 89, 8, 19},
+							{34, 3, 63, 3}};
+		
+		System.out.println("La cuenta para [2][0] es :"+" "+arreglo[2][0]);
+				
+		}
+		
+		
+		
+	
+	
+	public static void main(String[] args) {
+		
+Variables2 re = new Variables2();
+
+re.array();
+	}
+
+}

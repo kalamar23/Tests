@@ -1,0 +1,25 @@
+import java.io.*;
+public class PruebaAlbum {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws IOException {
+	String option;
+BufferedReader i = new BufferedReader(new InputStreamReader(System.in));		
+Bienvenida b = new Bienvenida();
+b.Welcome();
+
+System.out.println("Ingrese una marca de computador:");
+try {
+option=i.readLine();
+}
+catch(NumberFormatException ex) {
+	Album al1 = new Album();
+	al1.Error();
+}
+
+
+}
+	}
+

@@ -1,0 +1,158 @@
+
+public class Variable {
+	
+	public void Megas (){
+		
+		//Uso de Cast -libro Java 2
+		byte byte1 = 100;
+		byte byte2 = 100;
+		byte byte3;
+		
+		byte3 = (byte) (byte1 * byte2 /100); 
+	System.out.println("El valor en megas es de:"+byte3);
+		
+	}
+// Array unidimensional	
+public void Array (){
+	
+	double factura [];
+	factura = new double [100];
+	factura [3]= 450.500;
+	factura [10] = 32.993;
+	
+	System.out.println("La deuda del cliente numero 3 es de :"+factura[3]);
+	
+}
+
+// Array Mutildimensional
+
+public void array2 (){
+	
+double factura [][];
+
+factura = new double [2][100];
+factura [0][3] = 45.345;
+factura [1][3] = 2500.99;
+
+
+System.out.println("El monto en la cuenta de ahorro es:"+factura[0][3]);
+System.out.println("El monto en la cuenta de corriente  es:"+factura[1][3]);	
+	
+}
+
+// Array de Array - Pagina 108 libro Java 2
+public void array3() {
+	int suma=0,total=0;
+	double factura [][] = {{1, 2, 3},{3, 2, 1},{1, 2, 3}};
+	
+	
+	for (int outer_index = 0; outer_index < factura.length;outer_index++){
+		System.out.println("variable outer:"+outer_index);
+		for (int inner_index = 0; inner_index < factura[outer_index].length;inner_index++){
+			System.out.println("variable inner:"+inner_index);
+			suma += factura[outer_index][inner_index];
+			total++;
+			
+		}
+	}
+		System.out.println("El valor medio del Array es:"+(suma/total));
+}
+//	Declarar Array de dos dimensiones
+
+public void array4(){
+	double factura [][] = {{10.11, 19.56, 4343.91, 43.95},{11.23, 54.23, 543.62, 46327656276.06}};
+
+	System.out.println("La cuenta de ahorro tiene :"+factura [0][3]);
+	System.out.println("La cuenta corriente tiene:"+factura [1][3]);
+	
+}
+
+// Array multidimensional con diferente numero de elementos en cada fila
+public void array5 (){
+	
+	double factura [][] = new double [5][];
+	
+	factura [0] = new double [100];
+	factura [1] = new double [400];
+	factura [2] = new double [250];
+	factura [3] = new double [300];
+	factura [4] = new double [150];
+	
+	factura [0][5] = 45.56;	
+	
+}
+
+// Medir longitud de array unidimensional 
+public void array6 (){
+	int suma=0, average;
+	double factura [] = {1, 5, 11, 34, 40};
+	for (int i = 0;i < factura.length;i++){
+		
+		suma += factura[i];
+		average = suma/factura.length;
+		
+		System.out.println("El valor medio del array es:"+average);
+	}
+	
+}
+// vector de enteros
+public int array7 (int a){
+	String h = "Usted tiene la nota máxima";
+	double vec [] = new double [8];
+	if (a == 7){
+	vec [a] = 7.0;
+	System.out.println(h+vec[7]);
+	}
+	return (int) vec[7];
+}
+// Medir longitud de Array de 3 dimensiones	(3D)
+public void array8 (){
+	
+	int factura [][][]  =
+		{
+		{
+		{1,2,3,4},
+		{5,6,7,8}
+		},
+		{
+		{10,20,30,40},
+		{50,60,70,80}
+		},
+		{
+		{30,20,10,50},
+		{5,7,9,8}
+		}};
+	
+	for(int outer_index = 0;outer_index < factura.length;outer_index++){
+		//System.out.println("Variable outer_index:"+outer_index);
+		
+		for (int midle_index = 0;midle_index < factura[outer_index].length;midle_index++){
+			//System.out.println("Variable midle_index:"+midle_index);	
+			
+		for (int inner_index = 0;inner_index < factura[midle_index].length;inner_index++){
+			//System.out.println("Variable inner_index:"+inner_index);
+		
+		}
+		System.out.println("Prueba"+factura[outer_index][midle_index][inner_index])	;		
+		}
+		
+	}
+}
+
+
+public static void main(String[] args) {
+	
+		
+Variable va = new Variable();
+// va.Megas();	
+//va.Array();
+//va.array2();
+//va.array3();
+//va.array4();
+//va.array6();
+//System.out.println(va.array7(7));
+va.array8();
+
+}
+
+}

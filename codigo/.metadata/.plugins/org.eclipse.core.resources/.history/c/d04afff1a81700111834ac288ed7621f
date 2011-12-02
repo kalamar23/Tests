@@ -1,0 +1,49 @@
+
+public class Variable {
+	
+	public void Megas (){
+		
+		//Uso de Cast -libro Java 2
+		byte byte1 = 100;
+		byte byte2 = 100;
+		byte byte3;
+		
+		byte3 = (byte) (byte1 * byte2 /100); 
+	System.out.println("El valor en megas es de:"+byte3);
+		
+	}
+// Array unidimensional	
+public void Array (){
+	
+	double factura [];
+	factura = new double [100];
+	factura [3]= 450.500;
+	factura [10] = 32.993;
+	
+	System.out.println("La deuda del cliente numero 3 es de :"+factura[3]);
+	
+}
+
+// Array Mutildimensional
+
+public void array2 (){
+	
+double factura [][];
+
+factura = new double [2][100];
+factura [0]
+	
+	
+}
+
+	
+	public static void main(String[] args) {
+	
+		
+Variable va = new Variable();
+// va.Megas();	
+va.Array();
+
+	}
+
+}

@@ -1,0 +1,22 @@
+
+public enum Marcas {
+
+Toshiba(Empresas.Toshiba),
+toshiba(Empresas.toshiba),
+
+
+
+private Empresas empresas;
+Marcas(Empresas empresa){
+	this.empresas = empresas;
+}
+public Empresas empresas(){
+	return empresas;
+}
+
+public enum Empresas {
+Toshiba, toshiba, Compaq, compaq, Intel, intel;
+
+}
+}
+

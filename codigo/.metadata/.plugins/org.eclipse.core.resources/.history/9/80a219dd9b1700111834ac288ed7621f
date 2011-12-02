@@ -1,0 +1,29 @@
+
+public class Variable {
+	
+	public void Megas (){
+		
+		//Uso de Cast -libro Java 2
+		byte byte1 = 100;
+		byte byte2 = 100;
+		byte byte3;
+		
+		byte3 = (byte) (byte1 * byte2 /100); 
+	System.out.println("El valor en megas es de:"+byte3);	
+
+		
+		
+		
+	}
+	
+
+	
+	public static void main(String[] args) {
+	
+		
+Variable va = new Variable();
+va.Megas();	
+
+	}
+
+}

@@ -1,0 +1,6 @@
+
+public enum Marcas {
+	
+	Toshiba, toshiba, Compaq, compaq,
+
+}

@@ -1,0 +1,22 @@
+
+public class Variables3 {
+
+	
+	public void cadena1(){
+		
+		String s1;
+		s1 = "Hola mundo desde Java !!!";
+		
+		System.out.println(s1);
+	}
+	
+	public static void main(String[] args) {
+		
+	Variables3 va = new Variables3();
+		
+		
+	}
+	
+	
+	
+}

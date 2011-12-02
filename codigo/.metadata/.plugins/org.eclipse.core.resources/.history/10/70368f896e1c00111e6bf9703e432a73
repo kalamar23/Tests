@@ -1,0 +1,87 @@
+
+public class Variables3 {
+
+	
+	public void cadena1(){
+		
+		String s1;
+		s1 = "Hola mundo desde Java !!!";
+		
+		System.out.println(s1);
+	
+		String s2 = new String ("Hola mundo desde Java !!!");
+	
+		System.out.println(s2);
+	// Mostrar el primer caracter de la cadena S1 
+		char s3 = s1.charAt(0);
+System.out.println("El primer caracter de " + "\"" + s1 + "\" " + " es : " + s3);
+
+// Convirtiendo la cadena s1 en un array 
+
+char chars1[] = s1.toCharArray();
+
+System.out.println("El segundo caracter de" + "\"" +s1 + "\"" + " es:" + chars1[1]);
+
+// Muestra los primero 5 caracteres de la cadena s1
+char  chars2 [] = new char [5];
+
+s1.getChars(0, 5, chars2, 0);
+
+System.out.println("Los primeros 5 caracteres de " + "\"" + s1 + "\"" + " son : " + new String (chars2));
+
+	}
+	
+	public void cadena2(){
+		
+		String s1 = "Hola";
+		
+		
+		String s2 = s1 + " desde ";
+		String s3 = s2 + " JAVA !!!";
+		
+		String s4 = s1.concat(" desde ");
+		String s5 = s4.concat(" JAVA !!!");
+		
+		System.out.println(s3);
+		System.out.println(s5);
+	}
+	// Convertir cadena de mayuscula a minuscula
+public void cadena3(){
+String mayus =	"NICANOR PARRA GANA PREMIO CERVANTES !!!"	;
+String minus = "nicanor parra gana premio cervantes !!!" ;
+		
+String s1 = mayus.toLowerCase();
+String s2 = minus.toUpperCase();
+
+System.out.println("A minuscula: " +s1);
+System.out.println("A mayuscula: " +s2);
+	}
+	// medir la longitud de una cadena 
+	public void cadena4(){
+String s1 = "Midiendo la longitud de la cadena ";
+
+System.out.println("La longitud de la cadena es de : " + s1.length() + " caracteres");
+System.out.println("La longitud de la cadena es de : " + "\"" + "Midiendo la cadena".length() + "\"" +  "caracteres");
+	}
+	
+	// Indica si una palabra está contenida en un String 
+	public void cadena5(){
+		
+		String s1 = "kreutzberger llegó al escenario de la teletón";
+		if 
+		
+	}
+	public static void main(String[] args) {
+		
+	Variables3 va = new Variables3();
+		 
+//va.cadena1();
+//va.cadena2();
+//va.cadena3();
+va.cadena4();
+	
+	}
+	
+	
+	
+}

@@ -1,0 +1,31 @@
+
+public class Variables3 {
+
+	
+	public void cadena1(){
+		
+		String s1;
+		s1 = "Hola mundo desde Java !!!";
+		
+		System.out.println(s1);
+	
+		String s2 = new String ("Hola mundo desde Java !!!");
+	
+		System.out.println(s2);
+	// Mostrar el primer caracter de la cadena S1 
+		char s3 = s1.charAt(0);
+System.out.println("El primer caracter de " + "\"" + s1 + "\" " + " es : " + s3);
+
+// Convirtiendo la cadena s1 en un array 
+	}
+	
+	public static void main(String[] args) {
+		
+	Variables3 va = new Variables3();
+		
+va.cadena1();		
+	}
+	
+	
+	
+}

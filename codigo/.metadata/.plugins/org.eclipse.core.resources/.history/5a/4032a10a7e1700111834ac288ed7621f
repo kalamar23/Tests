@@ -1,0 +1,105 @@
+import java.io.*;
+
+public class MetodosyObjetos {
+
+public int sumar (int a, int b){
+
+int c = a+b ;
+		
+	
+return c;
+
+}
+
+public int multipĺicar (int a, int b){
+
+int c = a*b ;
+		
+	
+return c;
+
+}
+
+//uso de ciclo for
+public void repetir (){
+
+for (int i=0;i <= 10; i++) {
+
+	System.out.println("Probando el uso de ciclo for");
+
+}
+
+}
+// uso de ciclo while
+public void repetir2() {
+int a;	
+a=1;
+	while(a<=10) {
+			
+		System.out.println("Repetir 10 veces con While");
+		System.out.println(a);
+		a=a+1;
+	
+	}
+}
+// uso de IF y Else
+public int CualEsMayor (int a, int b){
+	int z=0;
+	String c;
+	
+
+	if (a<b){ 
+	z=1	;
+	c="El valor de B es mayor al de A";
+		System.out.println(c);
+	
+	}
+	else { z=2; c="El valor de A es mayor al de B";
+		System.out.println(c);
+	}
+	
+	return z;
+	
+} 
+// uso de entrada de teclado
+public void consulta() throws IOException {
+	
+	BufferedReader c = new BufferedReader (new InputStreamReader(System.in));
+	String a=c.readLine();
+	String b=c.readLine();
+	
+	System.out.println(a);
+	System.out.println(b);
+	
+int d=Integer.parseInt(a);
+int e=Integer.parseInt(b);
+
+this.CualEsMayor(d, e);
+	
+}
+
+public void Megas (){
+	
+	byte bytes1 = 100;
+	byte bytes2 = 100;
+	byte bytes3;
+			bytes3 = (byte) (bytes1 * bytes2 /100) ;
+				
+	
+	
+}
+
+	
+public static void main(String[] args) throws IOException {
+		
+MetodosyObjetos met = new MetodosyObjetos();
+//System.out.println("El resultado de la suma es :"+(met.sumar(10 , 20)));
+//System.out.println("El resultado de la multiplicacion es :"+(met.multipĺicar(10, 2)));
+//met.repetir();
+//met.repetir2();
+//met.CualEsMayor(50,30);
+//met.consulta();
+
+	
+	}
+}

@@ -1,0 +1,16 @@
+import java.io.*;
+public class Variables2 {
+
+	// Inicializar Array de 3 dimensiones y medir longitud
+	public void array (){
+		
+	}
+	
+	public static void main(String[] args) {
+		
+Variables2 re = new Variables2();
+
+re.
+	}
+
+}

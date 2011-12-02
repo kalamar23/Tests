@@ -1,0 +1,24 @@
+
+public class Variables3 {
+
+public Variables3(String in){
+	
+	this.cadena1(in);
+	
+}
+	public void cadena1(String in){
+		
+		
+		System.out.println(in);
+	}
+	
+	public static void main(String[] args) {
+		
+	Variables3 va = new Variables3("Hola mundo desde Java !!!");
+		
+	
+	}
+	
+	
+	
+}

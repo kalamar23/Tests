@@ -1,0 +1,41 @@
+import java.io.*;
+public class PruebaAlbum {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws IOException {
+	String option;
+BufferedReader i = new BufferedReader(new InputStreamReader(System.in));		
+Bienvenida b = new Bienvenida();
+b.Welcome();
+
+System.out.println("Ingrese una marca de computador:");
+try {
+option=i.readLine();
+
+if (option.equals("Compaq") || option.equals("compaq"))   {
+	
+Album al1 = new Album("Compaq","Notebook", 14);
+al1.mostrar();
+}
+
+else if (option.equals("Toshiba") || option.equals("toshiba")){
+Album al1 = new Album("Toshiba","Notebook", 15);
+al1.mostrar();
+}
+else if (option.equals("vector") || option.equals("Vector")){
+Album al2 = new Album("Toshiba");
+al2.Vectoriza("");
+}
+
+}
+catch(Exception ex) {
+	
+	System.out.println("Usted ha escrito una marca no valida");
+main(args);	
+}
+
+}
+	}
+

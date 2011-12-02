@@ -1,0 +1,64 @@
+public class VariableString {
+// Crear cadena ejemplos Simple - usando contructores
+	public void cadena1(){
+		
+	String s1 = "Hola desde Java !";
+
+		// Crear cadena declarando e inicializando después		
+		String s2;
+		s2 = "Hola desde JAVA !!!";	
+		// Creando una cadena vacia mediante constructor de Clase String
+		String s3 = new String ();
+		s3 = "Hola desde Java !!!";	
+		// Creando una cadena string con el constructor inicializando el objeto
+		String s4 = new String ("Hola desde Java");
+			char c1 [] = {'H', 'o', 'l', 'a', ' ', 'A', 'h','i'};
+		
+		String s5 = new String(c1);	
+		String s6 = new String (c1, 0, 4);
+		
+		double double1 = 189277283.23;
+		String s7 = String.valueOf(double1);
+		
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		System.out.println(s4);
+		System.out.println(s5);
+		System.out.println(s6);
+		System.out.println(s7);	
+	}
+
+// Obtener longitud de una cadena
+	
+public void cadena2(){
+	
+	String s1 = "Hola desde Java !!!";
+	
+	System.out.println("\" " +s1 + "\" " + "es" + " " +s1.length() + " " + "caracteres de largo");
+	
+	System.out.println("\" " + "Hola" + "\" " + "tiene" + " " + "Hola".length() + " " +   "caracteres de largo");
+	
+}
+// Concatenar cadenas
+
+public void cadena3(){
+	
+	String s1 = "Hola";
+
+	String s2 = s1 + "desde";
+	String s3 = s2 + "Java !!";
+	
+	String s4 = s1.concat("desde");
+	
+}
+
+	public static void main(String[] args) {
+VariableString va = new VariableString();
+
+//va.cadena1();
+va.cadena2();
+
+	}
+
+}

@@ -1,0 +1,74 @@
+// Referencia this.
+// Compilar con: javac UsoThis.java
+// Ejecutar con: java UsoThis
+// http://codigomaldito.blogspot.com
+
+class Ventana {
+    private int largo;
+    private int ancho;
+    Ventana(int largo, int ancho) {
+ //this.DATOMIEMBRO elimina la ambiguedad.
+ this.largo = largo;
+ this.ancho = ancho;
+    }
+    Ventana(){
+ // No es necesario usar this.
+ largo = 0;
+ ancho = 0;
+    }
+
+    // Devuelve una referencia al mismo objeto
+    // esto permite una llamada del tipo 
+    // obj.incrementarLargo().incrementarLargo();
+    public Ventana incrementarLargo() {
+ ++largo;
+ return this;
+    }
+    public Ventana incrementarAncho() {
+ ++ancho;
+ return this;
+    }
+    public int getAncho() {
+ return ancho;
+    }
+    public int getLargo() {
+ //utilzamos la referencia.
+ return largo;
+    }
+
+
+    public void mostrar() {
+ // AquÃ­ no hay ambiguedad, podemos utilizar
+ // explicitamente a this, o bien
+ // no especificarlo.
+ System.out.println("Ancho: "+getAncho()+" y Largo: "+ this.getLargo());
+    }
+
+}
+
+
+public class UsoThis {
+
+    
+    // Flujo principal de ejecuciÃ³n
+    public static void main (String [] args) {
+ //El constructor usa this para resolver la ambiguedad.
+ System.out.println("Referencia A");
+ Ventana A = new Ventana(0,0);
+ A.mostrar();
+ //incrementarAncho() devuelve una referencia al objeto.
+ System.out.println("Se incrementa dos veces el ancho del objeto al que apunta A");
+ A.incrementarAncho().incrementarAncho();
+ A.mostrar();
+
+ // Este modo de asignar resulta curioso
+ // Creamos una referencia, pero no un objeto.
+ Ventana B;
+ // Asignamos la referencia de incrementarLargo();
+ B = A.incrementarLargo();
+ //Ahora las dos referencias apuntan al mismo objeto.
+ System.out.println("Referencia A y referencia B apuntan al mismo objeto.");
+ A.mostrar();
+ B.mostrar();
+    }
+}
